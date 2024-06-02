@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0c78a6;
+  background: linear-gradient(90deg, #70c7e9 0%, #9285e7 100%);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.temperature-converter {
+  background: #042b47;
+  border-radius: 10px;
+  padding: 25px 30px 50px;
+  min-width: 320px;
+  width:fit-content;
+  box-shadow: -5px -5px 30px rgba(0, 0, 0, 0.2), 5px 5px 30px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-field,
+.degree-type {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ffffff;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #ffffff;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  border-bottom: 2px solid #4c49f3;
+}
+
+select {
+  appearance: none;
+}
+
+select option {
+  background-color: #042b47;
+  color: #ffffff;
+}
+
+#convert-btn {
+  background: linear-gradient(to bottom, #4a47e7, #120fb9);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #f6f6f6;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  padding: 15px 85px;
+  transition: all 0.3s ease-in;
+  width: 100%;
+}
+
+#convert-btn:hover {
+  background: linear-gradient(to bottom, #5b58f5, #2a26d7);
+  transform: translateY(-2px);
+}
+
+.result {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.result-heading {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
